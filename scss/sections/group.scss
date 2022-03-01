@@ -97,11 +97,16 @@ body {
                 }
                 .form-group {
                     padding: 0.5rem 0 0.5rem 0;
+                    .form-control {
+                        border-radius: 0;
+                        height: 1.875em;
+                        padding:6px
+                    }
+                    input[type="text"]:focus {
+                        outline-offset: max(2px, 0.15em);
+                      }
                 }
-                .form-control {
-                    border-radius: 0;
-                    height: 1.875em;
-                }
+
                 .form-button {
                     margin-top: 10px;
                     margin-bottom: 10px;

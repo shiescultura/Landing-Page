@@ -11126,7 +11126,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .group__title {
-    font-size: 1.875em;
+    font-size: 28px;
   }
   .group__title svg {
     display: none;
@@ -11193,6 +11193,10 @@ textarea.form-control-lg {
   font-family: "CamdenSans-700";
   font-size: 1.125em;
   font-weight: bold;
+}
+
+.submit-btn:hover {
+  color: #223e1e;
 }
 
 @font-face {
@@ -11300,9 +11304,13 @@ body {
 .group .group__item .sideform form .form-group {
   padding: 0.5rem 0 0.5rem 0;
 }
-.group .group__item .sideform form .form-control {
+.group .group__item .sideform form .form-group .form-control {
   border-radius: 0;
   height: 1.875em;
+  padding: 6px;
+}
+.group .group__item .sideform form .form-group input[type=text]:focus {
+  outline-offset: max(2px, 0.15em);
 }
 .group .group__item .sideform form .form-button {
   margin-top: 10px;

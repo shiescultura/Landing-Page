@@ -17,7 +17,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-        font-size: 1.875em;
+        font-size: 28px;
         svg {
             display: none;
         }
@@ -83,7 +83,9 @@
     font-family: 'CamdenSans-700';
     font-size: 1.125em;
     font-weight: bold;
-
+}
+.submit-btn:hover {
+    color: $dark-green;
 }
 
 @font-face {
