@@ -11261,6 +11261,9 @@ body {
   cursor: not-allowed;
 }
 .group .group__item .sideform form .form-check input[type=checkbox] {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   /* Remove most all native input styles */
