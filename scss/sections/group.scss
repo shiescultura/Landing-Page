@@ -9,17 +9,9 @@ body {
             color: $dark-green;
             padding-top: 3.438em;
             padding-bottom: 2.875em;
-            padding-left: 5.625em;
-            padding-right:6.5em;
-            // svg {
-            //     margin-top:-10px;
-            // }
             @include media-breakpoint-up(lg) {
                 padding-top: 9.375em;
                 padding-bottom: 3.75em;
-                // svg {
-                //     display: none;
-                // }
             }
         }
         .logo {
@@ -91,11 +83,7 @@ body {
         }
     }
     .group__itemL {
-        height: 40em;
         padding: 2em;
         background-color: $light-green;
-        @include media-breakpoint-up(lg) {
-            height: 100%;
-        }
     }
 }

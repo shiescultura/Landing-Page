@@ -11108,22 +11108,49 @@ textarea.form-control-lg {
   background: #223e1e;
 }
 
-.group__title {
+.group__title1 {
   font-family: "CamdenSlab-400";
   font-size: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.group__title span {
+.group__title1 span {
   font-family: "CamdenSlab-700";
 }
-.group__title a {
+.group__title1 a {
   font-family: "CamdenSlab-700";
   color: #223e1e;
 }
 @media (min-width: 992px) {
-  .group__title {
+  .group__title1 {
     font-size: 1.875em;
   }
-  .group__title svg {
+}
+
+.group__title2 {
+  font-family: "CamdenSlab-400";
+  font-size: 1.5em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.group__title2 span {
+  font-family: "CamdenSlab-700";
+}
+.group__title2 a {
+  font-family: "CamdenSlab-700";
+  color: #223e1e;
+}
+@media (min-width: 992px) {
+  .group__title2 {
+    font-size: 1.875em;
+  }
+  .group__title2 svg {
     display: none;
   }
 }
@@ -11216,8 +11243,6 @@ body {
   color: #223e1e;
   padding-top: 3.438em;
   padding-bottom: 2.875em;
-  padding-left: 5.625em;
-  padding-right: 6.5em;
 }
 @media (min-width: 992px) {
   .group .group__item .cta {
@@ -11279,14 +11304,8 @@ body {
   }
 }
 .group .group__itemL {
-  height: 40em;
   padding: 2em;
   background-color: #8e9982;
-}
-@media (min-width: 992px) {
-  .group .group__itemL {
-    height: 100%;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

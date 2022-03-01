@@ -11116,8 +11116,6 @@ body {
   color: #223e1e;
   padding-top: 3.438em;
   padding-bottom: 2.875em;
-  padding-left: 5.625em;
-  padding-right: 6.5em;
 }
 @media (min-width: 992px) {
   .group .group__item .cta {
@@ -11179,14 +11177,8 @@ body {
   }
 }
 .group .group__itemL {
-  height: 40em;
   padding: 2em;
   background-color: #8e9982;
-}
-@media (min-width: 992px) {
-  .group .group__itemL {
-    height: 100%;
-  }
 }
 
 /*# sourceMappingURL=group.css.map */
