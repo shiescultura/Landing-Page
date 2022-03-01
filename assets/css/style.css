@@ -11108,7 +11108,7 @@ textarea.form-control-lg {
   background: #223e1e;
 }
 
-.group__title1 {
+.group__title {
   font-family: "CamdenSlab-400";
   font-size: 1.5em;
   display: -webkit-box;
@@ -11117,40 +11117,18 @@ textarea.form-control-lg {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.group__title1 span {
+.group__title span {
   font-family: "CamdenSlab-700";
 }
-.group__title1 a {
-  font-family: "CamdenSlab-700";
-  color: #223e1e;
-}
-@media (min-width: 992px) {
-  .group__title1 {
-    font-size: 1.875em;
-  }
-}
-
-.group__title2 {
-  font-family: "CamdenSlab-400";
-  font-size: 1.5em;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.group__title2 span {
-  font-family: "CamdenSlab-700";
-}
-.group__title2 a {
+.group__title a {
   font-family: "CamdenSlab-700";
   color: #223e1e;
 }
 @media (min-width: 992px) {
-  .group__title2 {
+  .group__title {
     font-size: 1.875em;
   }
-  .group__title2 svg {
+  .group__title svg {
     display: none;
   }
 }
@@ -11243,6 +11221,8 @@ body {
   color: #223e1e;
   padding-top: 3.438em;
   padding-bottom: 2.875em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 @media (min-width: 992px) {
   .group .group__item .cta {

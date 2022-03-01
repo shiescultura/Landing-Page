@@ -9,9 +9,17 @@ body {
             color: $dark-green;
             padding-top: 3.438em;
             padding-bottom: 2.875em;
+            padding-left: 1em;
+            padding-right:1em;
+            // svg {
+            //     margin-top:-10px;
+            // }
             @include media-breakpoint-up(lg) {
                 padding-top: 9.375em;
                 padding-bottom: 3.75em;
+                // svg {
+                //     display: none;
+                // }
             }
         }
         .logo {

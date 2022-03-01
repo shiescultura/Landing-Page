@@ -11116,6 +11116,8 @@ body {
   color: #223e1e;
   padding-top: 3.438em;
   padding-bottom: 2.875em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 @media (min-width: 992px) {
   .group .group__item .cta {
