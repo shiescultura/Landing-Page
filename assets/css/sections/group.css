@@ -11116,18 +11116,14 @@ body {
   color: #223e1e;
   padding-top: 3.438em;
   padding-bottom: 2.875em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 @media (min-width: 992px) {
   .group .group__item .cta {
     padding-top: 9.375em;
     padding-bottom: 3.75em;
   }
-}
-.group .group__item .logo {
-  height: 40em;
-  background-color: red;
 }
 .group .group__item .sideform {
   color: #fff;
@@ -11179,8 +11175,22 @@ body {
   }
 }
 .group .group__itemL {
-  padding: 2em;
   background-color: #8e9982;
+}
+.group .group__itemL .logo .img-full {
+  display: none;
+}
+.group .group__itemL .logo .img-mobile {
+  padding: 1em 0 1em 0;
+}
+@media (min-width: 992px) {
+  .group .group__itemL .logo .img-full {
+    padding: 1em;
+    display: block;
+  }
+  .group .group__itemL .logo .img-mobile {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=group.css.map */
