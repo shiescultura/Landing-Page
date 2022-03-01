@@ -100,6 +100,35 @@ body {
                     display:none;
                 }
             }
+            @include media-breakpoint-up(xs) {
+                .img-full {
+                    padding: 1em;
+                    display:none;
+                }
+                .img-mobile {
+                    padding: 1em 0 1em 0;
+                    display:block;
+                }
+            }
+            @include media-breakpoint-up(sm) {
+                .img-full {
+                    padding: 1em;
+                    display:block;
+                }
+                .img-mobile {
+                    display:none;
+                }
+            }
+            @include media-breakpoint-up(md) {
+                .img-full {
+                    padding: 1em;
+                    display:block;
+                }
+                .img-mobile {
+                    display:none;
+                }
+            }
+
         }
     }
 }

@@ -11297,5 +11297,31 @@ body {
     display: none;
   }
 }
+.group .group__itemL .logo .img-full {
+  padding: 1em;
+  display: none;
+}
+.group .group__itemL .logo .img-mobile {
+  padding: 1em 0 1em 0;
+  display: block;
+}
+@media (min-width: 576px) {
+  .group .group__itemL .logo .img-full {
+    padding: 1em;
+    display: block;
+  }
+  .group .group__itemL .logo .img-mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .group .group__itemL .logo .img-full {
+    padding: 1em;
+    display: block;
+  }
+  .group .group__itemL .logo .img-mobile {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
