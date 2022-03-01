@@ -63,22 +63,7 @@
 
 .form-check {
     text-align: left;
-    padding-top: 1em;
-    .form-check-input {
-        height: 16px;
-        width: 16px;
-    }
-    .form-check-label {
-        font-size: 0.75em;
-        margin-left: 10px;
-        font-family: 'Roboto', sans-serif;
-    }
-    @include media-breakpoint-up(lg) {
-        padding-top:2em;
-        .form-check-label {
-            font-size: 1em;
-        }
-    }
+    padding:0;
 }
 
 .form-notes {

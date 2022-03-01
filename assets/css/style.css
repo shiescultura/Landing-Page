@@ -11171,24 +11171,7 @@ textarea.form-control-lg {
 }
 .form-check {
   text-align: left;
-  padding-top: 1em;
-}
-.form-check .form-check-input {
-  height: 16px;
-  width: 16px;
-}
-.form-check .form-check-label {
-  font-size: 0.75em;
-  margin-left: 10px;
-  font-family: "Roboto", sans-serif;
-}
-@media (min-width: 992px) {
-  .form-check {
-    padding-top: 2em;
-  }
-  .form-check .form-check-label {
-    font-size: 1em;
-  }
+  padding: 0;
 }
 
 .form-notes {
@@ -11232,6 +11215,11 @@ body {
   background-color: #eae9e3;
 }
 
+:root {
+  --form-control1-color: $dark-green;
+  --form-control-disabled: #959495;
+}
+
 .group .group__item .cta {
   color: #223e1e;
   padding-top: 3.438em;
@@ -11250,6 +11238,64 @@ body {
 }
 .group .group__item .sideform form {
   padding: 0 2.5em 0 2.5em;
+}
+.group .group__item .sideform form .form-check {
+  padding-top: 2.5em;
+}
+.group .group__item .sideform form .form-check .form-control1 {
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-columns: 1.5em auto;
+  gap: 2em;
+}
+.group .group__item .sideform form .form-check .form-control1 + .form-control1 {
+  margin-top: 3em;
+}
+.group .group__item .sideform form .form-check .form-control1--disabled {
+  color: var(--form-control1-disabled);
+  cursor: not-allowed;
+}
+.group .group__item .sideform form .form-check input[type=checkbox] {
+  /* Add if not using autoprefixer */
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: white;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.15em solid currentColor;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+.group .group__item .sideform form .form-check input[type=checkbox]::before {
+  content: "";
+  width: 2em;
+  height: 2em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control1-color);
+  /* Windows High Contrast Mode */
+  background-color: #223e1e;
+}
+.group .group__item .sideform form .form-check input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+.group .group__item .sideform form .form-check input[type=checkbox]:focus {
+  outline-offset: max(2px, 0.15em);
+}
+.group .group__item .sideform form .form-check input[type=checkbox]:disabled {
+  --form-control1-color: var(--form-control1-disabled);
+  color: var(--form-control1-disabled);
+  cursor: not-allowed;
 }
 .group .group__item .sideform form .form-group {
   padding: 0.5rem 0 0.5rem 0;

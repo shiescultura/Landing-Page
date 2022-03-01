@@ -3,6 +3,11 @@
 body {
     background-color: $bg-color;
 }
+
+:root {
+    --form-control1-color: $dark-green;
+    --form-control-disabled: #959495;
+  }
 .group {
     .group__item {
         .cta {
@@ -11,21 +16,85 @@ body {
             padding-bottom: 2.875em;
             padding-left: 1.5em;
             padding-right:1.5em;
-            // svg {
-            //     margin-top:-10px;
-            // }
             @include media-breakpoint-up(lg) {
                 padding-top: 9.375em;
                 padding-bottom: 3.75em;
-                // svg {
-                //     display: none;
-                // }
             }
         }
         .sideform {
             color: $white;
             form {
                 padding: 0 2.5em 0 2.5em;
+                .form-check {
+                    padding-top: 2.5em;
+                    .form-control1 {
+                        font-size: 1em;
+                        font-family: 'Roboto', sans-serif;
+                        display: grid;
+                        grid-template-columns: 1.5em auto;
+                        gap: 2em;
+                      }
+
+                      .form-control1 + .form-control1 {
+                        margin-top: 3em;
+                      }
+                      
+                      .form-control1--disabled {
+                        color: var(--form-control1-disabled);
+                        cursor: not-allowed;
+                      }
+                      
+                      input[type="checkbox"] {
+                        /* Add if not using autoprefixer */
+                        -webkit-appearance: none;
+                        /* Remove most all native input styles */
+                        appearance: none;
+                        /* For iOS < 15 */
+                        background-color: white;
+                        /* Not removed via appearance */
+                        margin: 0;
+                      
+                        font: inherit;
+                        color: currentColor;
+                        width: 2.5em;
+                        height: 2.5em;
+                        border: 0.15em solid currentColor;
+                        // border-radius: 0.15em;
+                        transform: translateY(-0.075em);
+                      
+                        display: grid;
+                        place-content: center;
+                      }
+                      
+                      input[type="checkbox"]::before {
+                        content: "";
+                        width: 2em;
+                        height: 2em;
+                        clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+                        transform: scale(0);
+                        transform-origin: bottom left;
+                        transition: 120ms transform ease-in-out;
+                        box-shadow: inset 1em 1em var(--form-control1-color);
+                        /* Windows High Contrast Mode */
+                        background-color: $dark-green;
+                      }
+                      
+                      input[type="checkbox"]:checked::before {
+                        transform: scale(1);
+                      }
+                      
+                      input[type="checkbox"]:focus {
+                        // outline: max(2px, 0.15em) solid currentColor;
+                        outline-offset: max(2px, 0.15em);
+                      }
+                      
+                      input[type="checkbox"]:disabled {
+                        --form-control1-color: var(--form-control1-disabled);
+                      
+                        color: var(--form-control1-disabled);
+                        cursor: not-allowed;
+                      }
+                }
                 .form-group {
                     padding: 0.5rem 0 0.5rem 0;
                 }
@@ -43,9 +112,6 @@ body {
                 .fork-img {
                     width: 75px;
                 }
-                .form-check {
-
-            }
 
             }
             @include media-breakpoint-up(lg) {
