@@ -26,7 +26,6 @@ body {
             color: $white;
             form {
                 padding: 0 2.5em 0 2.5em;
-                // background-color: red;
                 .form-group {
                     padding: 0.5rem 0 0.5rem 0;
                 }
@@ -44,6 +43,9 @@ body {
                 .fork-img {
                     width: 75px;
                 }
+                .form-check {
+
+            }
 
             }
             @include media-breakpoint-up(lg) {

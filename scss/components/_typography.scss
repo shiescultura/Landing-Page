@@ -48,11 +48,11 @@
 }
 
 .form-group {
-    font-family: 'CamdenSlab-700';
+    font-family: 'CamdenSans-700';
     text-align: left;
     font-size: 1.125em;
     .form-control {
-        font-family: 'CamdenSlab-400';
+        font-family: 'CamdenSans-700';
         text-transform: uppercase;
         color: $dark-green;
     }
@@ -64,8 +64,13 @@
 .form-check {
     text-align: left;
     padding-top: 1em;
+    .form-check-input {
+        height: 16px;
+        width: 16px;
+    }
     .form-check-label {
         font-size: 0.75em;
+        margin-left: 10px;
         font-family: 'Roboto', sans-serif;
     }
     @include media-breakpoint-up(lg) {
@@ -88,7 +93,9 @@
 }
 
 .submit-btn {
-    font-family: 'Roboto', sans-serif;
+    border: 0;
+    color: $dark-green;
+    font-family: 'CamdenSans-700';
     font-size: 1.125em;
     font-weight: bold;
 
@@ -104,4 +111,16 @@
     font-family: 'CamdenSlab-400';
     src: url('../../assets/webfonts/CamdenSlab-400.woff2') format('woff2'),
          url('../../assets/webfonts/CamdenSlab-400.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CamdenSans-700';
+    src: url('../../assets/webfonts/CamdenSans-700.woff2') format('woff2'),
+         url('../../assets/webfonts/CamdenSans-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'CamdenSans-400';
+    src: url('../../assets/webfonts/CamdenSans-400.woff2') format('woff2'),
+         url('../../assets/webfonts/CamdenSans-400.woff') format('woff');
 }
