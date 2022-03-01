@@ -29,7 +29,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #8e9982;
-  --bs-secondary: #213e1f;
+  --bs-secondary: #223e1e;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -37,7 +37,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 142, 153, 130;
-  --bs-secondary-rgb: 33, 62, 31;
+  --bs-secondary-rgb: 34, 62, 30;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -2948,32 +2948,32 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #fff;
-  background-color: #213e1f;
-  border-color: #213e1f;
+  background-color: #223e1e;
+  border-color: #223e1e;
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #1c351a;
-  border-color: #1a3219;
+  background-color: #1d351a;
+  border-color: #1b3218;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
   color: #fff;
-  background-color: #1c351a;
-  border-color: #1a3219;
-  box-shadow: 0 0 0 0.25rem rgba(66, 91, 65, 0.5);
+  background-color: #1d351a;
+  border-color: #1b3218;
+  box-shadow: 0 0 0 0.25rem rgba(67, 91, 64, 0.5);
 }
 .btn-check:checked + .btn-secondary, .btn-check:active + .btn-secondary, .btn-secondary:active, .btn-secondary.active, .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #1a3219;
-  border-color: #192f17;
+  background-color: #1b3218;
+  border-color: #1a2f17;
 }
 .btn-check:checked + .btn-secondary:focus, .btn-check:active + .btn-secondary:focus, .btn-secondary:active:focus, .btn-secondary.active:focus, .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(66, 91, 65, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(67, 91, 64, 0.5);
 }
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #fff;
-  background-color: #213e1f;
-  border-color: #213e1f;
+  background-color: #223e1e;
+  border-color: #223e1e;
 }
 
 .btn-success {
@@ -3182,27 +3182,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  color: #213e1f;
-  border-color: #213e1f;
+  color: #223e1e;
+  border-color: #223e1e;
 }
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #213e1f;
-  border-color: #213e1f;
+  background-color: #223e1e;
+  border-color: #223e1e;
 }
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 62, 31, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(34, 62, 30, 0.5);
 }
 .btn-check:checked + .btn-outline-secondary, .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
   color: #fff;
-  background-color: #213e1f;
-  border-color: #213e1f;
+  background-color: #223e1e;
+  border-color: #223e1e;
 }
 .btn-check:checked + .btn-outline-secondary:focus, .btn-check:active + .btn-outline-secondary:focus, .btn-outline-secondary:active:focus, .btn-outline-secondary.active:focus, .btn-outline-secondary.dropdown-toggle.show:focus {
-  box-shadow: 0 0 0 0.25rem rgba(33, 62, 31, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(34, 62, 30, 0.5);
 }
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-  color: #213e1f;
+  color: #223e1e;
   background-color: transparent;
 }
 
@@ -4829,12 +4829,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  color: #142513;
+  color: #142512;
   background-color: #d3d8d2;
-  border-color: #bcc5bc;
+  border-color: #bdc5bc;
 }
 .alert-secondary .alert-link {
-  color: #101e0f;
+  color: #101e0e;
 }
 
 .alert-success {
@@ -5173,17 +5173,17 @@ textarea.form-control-lg {
 }
 
 .list-group-item-secondary {
-  color: #142513;
+  color: #142512;
   background-color: #d3d8d2;
 }
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #142513;
+  color: #142512;
   background-color: #bec2bd;
 }
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #142513;
-  border-color: #142513;
+  background-color: #142512;
+  border-color: #142512;
 }
 
 .list-group-item-success {
@@ -6277,10 +6277,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #213e1f;
+  color: #223e1e;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #1a3219;
+  color: #1b3218;
 }
 
 .link-success {
@@ -6720,7 +6720,7 @@ textarea.form-control-lg {
 }
 
 .border-secondary {
-  border-color: #213e1f !important;
+  border-color: #223e1e !important;
 }
 
 .border-success {
@@ -11105,7 +11105,7 @@ textarea.form-control-lg {
 }
 
 .bg-dgreen {
-  background: #213e1f;
+  background: #223e1e;
 }
 
 body {
@@ -11113,29 +11113,34 @@ body {
 }
 
 .group .group__item .cta {
-  padding-top: 4%;
-  padding-bottom: 30px;
+  color: #223e1e;
+  padding-top: 3.438em;
+  padding-bottom: 2.875em;
+  padding-left: 5.625em;
+  padding-right: 6.5em;
 }
 @media (min-width: 992px) {
-  .group .group__item .cta svg {
-    display: none;
+  .group .group__item .cta {
+    padding-top: 9.375em;
+    padding-bottom: 3.75em;
   }
+}
+.group .group__item .logo {
+  height: 40em;
+  background-color: red;
 }
 .group .group__item .sideform {
   color: #fff;
 }
 .group .group__item .sideform form {
-  padding: 1rem 1rem 0 1rem;
+  padding: 0 2.5em 0 2.5em;
 }
 .group .group__item .sideform form .form-group {
   padding: 0.5rem 0 0.5rem 0;
 }
 .group .group__item .sideform form .form-control {
   border-radius: 0;
-  height: 20px;
-}
-.group .group__item .sideform form .form-check {
-  padding: 1rem 0 1rem 1rem;
+  height: 1.875em;
 }
 .group .group__item .sideform form .form-button {
   margin-top: 10px;
@@ -11149,9 +11154,12 @@ body {
 }
 @media (min-width: 992px) {
   .group .group__item .sideform form {
-    padding: 1rem 5rem 0 5rem;
+    padding: 0 6em 0 6em;
   }
-  .group .group__item .sideform form .form-control {
+  .group .group__item .sideform form .form-group {
+    padding-bottom: 1em;
+  }
+  .group .group__item .sideform form .form-group .form-control {
     height: 30px;
   }
   .group .group__item .sideform form .fork-img {
@@ -11159,8 +11167,26 @@ body {
   }
 }
 .group .group__item .list {
-  padding-top: 30px;
-  padding-bottom: 4%;
+  color: #223e1e;
+  padding-top: 3.438em;
+  padding-bottom: 2.938em;
+  padding-left: 5.25em;
+  padding-right: 5em;
+}
+@media (min-width: 992px) {
+  .group .group__item .list svg {
+    display: none;
+  }
+}
+.group .group__itemL {
+  height: 40em;
+  padding: 2em;
+  background-color: #8e9982;
+}
+@media (min-width: 992px) {
+  .group .group__itemL {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=group.css.map */

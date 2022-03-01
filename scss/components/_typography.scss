@@ -2,40 +2,40 @@
 
 .group__title {
     font-family: 'CamdenSlab-400';
-    font-weight: 100;
-    padding: 1rem;
-    font-size: 0.875rem;
+    font-size: 1.5em;
     span {
-        font-family: 'CamdenSlab';
-        font-weight: 900;
+        font-family: 'CamdenSlab-700';
     }
     a {
-        font-family: 'CamdenSlab';
-        font-weight: 900;
+        font-family: 'CamdenSlab-700';
         color: $dark-green;
     }
+
     @include media-breakpoint-up(lg) {
-        font-size: 1.7rem;
+        font-size: 1.875em;
+        svg {
+            display: none;
+        }
     }
 }
 
 .group__form__title {
-    font-family: 'CamdenSlab';
-    font-weight: 900;
-    padding: 2rem;
-    font-size: 0.875rem;
+    font-family: 'CamdenSlab-700';
+    padding-top: 3rem;
+    font-size: 1.563em;
     @include media-breakpoint-up(lg) {
-        font-size: 1.2rem;
+        padding-top: 2.938em;
+        padding-bottom: 3.125em;
     }
 }
 
 .group__form__subtitle {
-    font-family: 'CamdenSlab-400';
-    font-weight: 900;
-    font-size: 0.875rem;
+    font-family: 'CamdenSlab-700';
+    padding: 2em;
+    font-size: 1.563em;
+
     span {
-        font-family: 'CamdenSlab';
-        font-weight: 900;
+        font-family: 'CamdenSlab-700';
     }
     @include media-breakpoint-up(lg) {
         display: none;
@@ -43,32 +43,54 @@
 }
 
 .form-group {
-    font-family: 'Roboto';
-    font-weight: 900;
+    font-family: 'CamdenSlab-700';
     text-align: left;
-    font-size: small;
+    font-size: 1.125em;
     .form-control {
+        font-family: 'CamdenSlab-400';
+        text-transform: uppercase;
         color: $dark-green;
-        font-weight: bold;
     }
     @include media-breakpoint-up(lg) {
-        font-size: medium;
+        // font-size: 0.938em;
     }
 }
 
 .form-check {
     text-align: left;
+    padding-top: 1em;
+    .form-check-label {
+        font-size: 0.75em;
+        font-family: 'Roboto', sans-serif;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-top:2em;
+        .form-check-label {
+            font-size: 1em;
+        }
+    }
 }
 
 .form-notes {
     text-align: left;
-    .remark {
-        font-size: small;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.875em;
+    padding-bottom: 5em;
+    @include media-breakpoint-up(lg) {
+        font-size: 1em;
+        padding-bottom: 7em;
     }
 }
 
+.submit-btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+
+}
+
 @font-face {
-    font-family: 'CamdenSlab';
+    font-family: 'CamdenSlab-700';
     src: url('../../assets/webfonts/CamdenSlab-700.woff2') format('woff2'),
          url('../../assets/webfonts/CamdenSlab-700.woff') format('woff');
 }
