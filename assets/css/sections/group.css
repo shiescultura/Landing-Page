@@ -11202,8 +11202,8 @@ body {
   height: 1.875em;
   padding: 6px;
 }
-.group .group__item .sideform form .form-group input[type=text]:focus {
-  outline-offset: max(2px, 0.15em);
+.group .group__item .sideform form .form-group .form-control:focus {
+  box-shadow: none !important;
 }
 .group .group__item .sideform form .form-button {
   margin-top: 10px;

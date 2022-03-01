@@ -102,9 +102,7 @@ body {
                         height: 1.875em;
                         padding:6px
                     }
-                    input[type="text"]:focus {
-                        outline-offset: max(2px, 0.15em);
-                      }
+                    .form-control:focus { box-shadow: none !important }
                 }
 
                 .form-button {
